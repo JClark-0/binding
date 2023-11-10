@@ -1,24 +1,31 @@
 
 /* Styles for all directions */
 
+
+
+
 header, main {
     font-size: var(--font-size);
     padding-left: 16px;
+    padding-right: 16px;
     max-width: 35rem;
 }
 
 nav {
     position: fixed;
     padding-left: 16px;
+    width: 100%;
+    height: var(--nav-height);
+    line-height: var(--nav-height);
 }
 
 .main-nav li {
     display: inline-block; 
-    width:100%;
 }
 
 h1, h2, h3 {
     font-family: var(--font-display);
+    padding-top: var(--nav-height);
     margin-bottom: var(--spacing);
     font-size: calc(var(--scale) * var(--font-size));
 } 
