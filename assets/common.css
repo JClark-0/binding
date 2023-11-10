@@ -1,4 +1,27 @@
-h1 {
-    font-family: var(--font-family);
+
+/* Styles for all directions */
+
+header, main {
     font-size: var(--font-size);
+    padding-left: 16px;
+    max-width: 35rem;
 }
+
+nav {
+    position: fixed;
+    padding-left: 16px;
+}
+
+.main-nav li {
+    display: inline-block; 
+    width:100%;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-display);
+    margin-bottom: var(--spacing);
+    font-size: calc(var(--scale) * var(--font-size));
+} 
+
+
+

@@ -1,4 +1,12 @@
+/* Direction 1 */
+
 :root {
-    --font-family: 'inter';
-    --font-size: 100px;
+    --font-display: 'inter';
+
+    /*Font size = scale * font-size */
+    --scale: 2;
+    --font-size: 12px;
+    --spacing: .5em;
+
+
 }
