@@ -13,6 +13,7 @@ nav {
     height: var(--nav-height);
     line-height: var(--nav-height);
     font-family: var(--font-main);
+    background-color: var(--background-color);
 }
 /*Splitting nav to left side and right side */
 .main-nav li:first-child {
@@ -54,6 +55,14 @@ p{
     font-family: var(--font-body);
     font-size: var(--font-size);
     max-width: 35rem;
+}
+
+blockquote{
+
+   font-family: var(--font-display);
+   font-size: 20px;
+   padding-top: var(--spacing);
+   margin-left: 10px;
 }
 
 
