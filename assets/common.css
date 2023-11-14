@@ -1,6 +1,10 @@
 
 /* Styles for all directions */
 
+html{
+	scroll-behavior: smooth;	
+}
+
 /* Main Navigation Start */
 nav {
     position: fixed;
