@@ -1,5 +1,6 @@
 /* Direction 2 */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
 :root {
-    --font-display: 'inter';
+    --font-display: 'Pixelify Sans', sans-serif;;
 }

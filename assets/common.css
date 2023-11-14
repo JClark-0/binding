@@ -1,34 +1,56 @@
 
 /* Styles for all directions */
 
+/* Main Navigation Start */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--nav-height);
+    line-height: var(--nav-height);
+    font-family: var(--font-main);
+}
+/*Splitting nav to left side and right side */
+.main-nav li:first-child {
+    float:left;
+    margin-left: 16px;
+}
+.main-nav li {
+    float: right;
+    margin-right:16px;
+}
+/* Main Navigation End */
 
-
+header {
+    /* Places the header under the nav */
+    padding-top: var(--nav-height);
+    padding-bottom: var(--nav-height);
+}
 
 header, main {
     font-size: var(--font-size);
     padding-left: 16px;
     padding-right: 16px;
-    max-width: 35rem;
 }
 
-nav {
-    position: fixed;
-    padding-left: 16px;
-    width: 100%;
-    height: var(--nav-height);
-    line-height: var(--nav-height);
-}
-
-.main-nav li {
-    display: inline-block; 
-}
-
-h1, h2, h3 {
+h1 {
     font-family: var(--font-display);
+    font-size: var(--display-font-size);
+}
+
+h2, h3 {
+    font-family: var(--font-main);
+    font-weight: 500;
     padding-top: var(--nav-height);
-    margin-bottom: var(--spacing);
+    padding-bottom: var(--spacing);
     font-size: calc(var(--scale) * var(--font-size));
 } 
+
+p{
+    font-family: var(--font-body);
+    font-size: var(--font-size);
+    max-width: 35rem;
+}
 
 
 
