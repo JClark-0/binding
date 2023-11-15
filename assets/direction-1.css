@@ -7,13 +7,13 @@
 
     /* Header */
     --font-display: 'Bebas Neue', sans-serif;
-    --display-font-size: 100px;
+    --display-font-size: 140px;
     /* Body */ 
     --font-main: 'Roboto', sans-serif;
     --font-body: 'Roboto', sans-serif;
     --font-quote: 'Roboto', sans-serif;
     --font-size: 16px;
-    --scale: 1.5; /* Will adjust h2, h3, blockquote size */
+    --scale: 1.8; /* Will adjust h2, h3, blockquote size */
     --spacing: 28px;
     /* Navigation */
     --nav-height: 50px; /* Will apply margin-top to headers */
@@ -23,12 +23,24 @@
 
 nav {
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.687);
+    border-bottom: 2px solid black;
 }
 h1 {
     line-height: 80%;
     padding-top: var(--spacing);
     padding-bottom: var(--spacing);
 }
+
+h2 {
+
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
 
 blockquote {
     letter-spacing: .04em;
@@ -40,7 +52,7 @@ blockquote {
 }
 
 p{
-    line-height: 130%;
+    line-height: 140%;
 }
 
 .top {
