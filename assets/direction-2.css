@@ -28,6 +28,9 @@
     --button-color: rgb(14, 14, 203);
     --button-font-color: white; 
 }
+nav {
+    width: 100%;
+}
 
 header {
     background-color: var(--background-color);

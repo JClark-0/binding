@@ -21,6 +21,9 @@
     --background-color: white;
 }
 
+nav {
+    width: 100%;
+}
 h1 {
     line-height: 80%;
     padding-top: var(--spacing);

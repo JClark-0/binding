@@ -5,32 +5,44 @@
 
     /* Header */
     --font-display: 'Gabarito', sans-serif;
-    --display-font-size: 100px;
+    --display-font-size: 110px;
     /* Body */ 
     --font-main: 'Gabarito', sans-serif;
     --font-body: 'Gabarito', sans-serif;
     --font-quote: 'Gabarito', sans-serif;
-    --font-size: 16px;
-    --scale: 1.5; /* Will adjust h2, h3, blockquote size */
+    --font-size: 18px;
+    --scale: 1.8; /* Will adjust h2, h3, blockquote size */
     --spacing: 28px;
     /* Navigation */
     --nav-height: 50px; /* Will apply margin-top to headers */
     /* colors */
-    --nav-color: rgb(3, 36, 23);;
+    --nav-color: rgb(23, 23, 23);;
     --nav-font-color:white
 }
+
+nav {
+
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+    right: 0;
+    left:0;
+
+}
 header {
-    background-color: rgb(3, 36, 23);
+    background-color: rgb(239, 222, 193); 
 }
 h1 {
-    color: rgb(123, 238, 51); 
+    color: rgb(23, 23, 23); 
 }
 header p {
-    color: white;
+    color:  rgb(23, 23, 23);
 }
 
 main {
-    background-color: rgb(205, 240, 197); 
+    background-color:  rgb(239, 222, 193); 
 }
 
 h1 {
@@ -41,24 +53,26 @@ h1 {
 
 blockquote {
     letter-spacing: .04em;
-    margin-left: .8em; 
-}
-
-.vl {
-    border-left: 2px solid black; 
 }
 
 p{
-    line-height: 130%;
+    line-height: 145%;
 }
 
 .top {
-    background: white;
-    color: black;
-    padding: 4%;
+    background: rgb(239, 222, 193);
+    color:rgb(23, 23, 23);
+    padding: 3%;
+    left: 0;
+    border-radius: 10px;
+    text-align: center;
+    margin: 16px;
+    border: 2px solid rgb(23, 23, 23);
+  
 }
 
 footer {
-    background-color: rgb(3, 36, 23);
+    background-color: rgb(23, 23, 23);
     color: white;
+    padding-bottom: 80px;
 }
