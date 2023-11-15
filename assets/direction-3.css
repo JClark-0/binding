@@ -1,6 +1,64 @@
 /* Direction 3 */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
 
 :root {
-    --font-display: 'inter';
-  
+
+    /* Header */
+    --font-display: 'Gabarito', sans-serif;
+    --display-font-size: 100px;
+    /* Body */ 
+    --font-main: 'Gabarito', sans-serif;
+    --font-body: 'Gabarito', sans-serif;
+    --font-quote: 'Gabarito', sans-serif;
+    --font-size: 16px;
+    --scale: 1.5; /* Will adjust h2, h3, blockquote size */
+    --spacing: 28px;
+    /* Navigation */
+    --nav-height: 50px; /* Will apply margin-top to headers */
+    /* colors */
+    --nav-color: rgb(3, 36, 23);;
+    --nav-font-color:white
+}
+header {
+    background-color: rgb(3, 36, 23);
+}
+h1 {
+    color: rgb(123, 238, 51); 
+}
+header p {
+    color: white;
+}
+
+main {
+    background-color: rgb(205, 240, 197); 
+}
+
+h1 {
+    line-height: 80%;
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+}
+
+blockquote {
+    letter-spacing: .04em;
+    margin-left: .8em; 
+}
+
+.vl {
+    border-left: 2px solid black; 
+}
+
+p{
+    line-height: 130%;
+}
+
+.top {
+    background: white;
+    color: black;
+    padding: 4%;
+}
+
+footer {
+    background-color: rgb(3, 36, 23);
+    color: white;
 }

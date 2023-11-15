@@ -1,6 +1,63 @@
 /* Direction 2 */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
+
+     /* Header */
     --font-display: 'Pixelify Sans', sans-serif;;
+    --display-font-size: 100px;
+    /* Body */ 
+    --font-main: 'Space Mono', monospace;
+    --font-body: 'Roboto', sans-serif;
+    --font-quote: 'Space Mono', monospace;
+    --font-size: 16px;
+    --scale: 1.5; /* Will adjust h2, h3, blockquote size */
+   
+    --spacing: 28px;
+    /* Navigation */
+    --nav-height: 50px; /* Will apply margin-top to headers */
+
+    /* colors */
+    --background-color: rgb(14, 14, 203);
+    --font-color: white; 
+
+    --nav-color: white;
+    --nav-font-color:rgb(14, 14, 203);
+
+    --button-color: rgb(14, 14, 203);
+    --button-font-color: white; 
 }
+
+header {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+h1 {
+    line-height: 80%;
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+}
+
+blockquote {
+    letter-spacing: .04em;
+    margin-left: .8em; 
+}
+
+.vl {
+    border-left: 2px solid var(--background-color);
+}
+
+p{
+    line-height: 130%;
+}
+
+
+
+
+
+
+
+
+    

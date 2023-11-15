@@ -13,7 +13,8 @@ nav {
     height: var(--nav-height);
     line-height: var(--nav-height);
     font-family: var(--font-main);
-    background-color: var(--background-color);
+    background-color: var(--nav-color);
+    color: var(--nav-font-color);
 }
 /*Splitting nav to left side and right side */
 .main-nav li:first-child {
@@ -61,6 +62,7 @@ p{
 blockquote{
    font-family: var(--font-quote);
    font-size: calc(var(--scale) * var(--font-size));
+   max-width: 35rem;
    margin-bottom: var(--spacing);
 }
 
@@ -69,6 +71,9 @@ blockquote{
     position: fixed; 
 	bottom: 0;
 	right: 0;
+    padding: 4%;
+    background-color: var(--button-color);
+    color: var(--button-font-color);
 }
 
 footer {
