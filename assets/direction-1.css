@@ -8,9 +8,10 @@
     /* Body */ 
     --font-main: 'Roboto', sans-serif;
     --font-body: 'Roboto', sans-serif;
+    --font-quote: 'Roboto', sans-serif;
     --font-size: 16px;
-    --scale: 1.5; /* Will adjust h2, h3 size */
-    --spacing: 16px;
+    --scale: 1.5; /* Will adjust h2, h3, blockquote size */
+    --spacing: 28px;
 
     /* Navigation */
     --nav-height: 50px; /* Will apply margin-top to headers */
@@ -20,6 +21,7 @@
     --display-font-size: 100px;
 
     --background-color: white;
+
 }
 
 
@@ -29,3 +31,21 @@ h1 {
     padding-bottom: var(--spacing);
 }
 
+blockquote {
+    letter-spacing: .04em;
+    margin-left: .8em; 
+}
+
+.vl {
+    border-left: 2px solid black; 
+}
+
+p{
+    line-height: 130%;
+}
+
+.top {
+    background: black;
+    color: white;
+    padding: 4%;
+}
