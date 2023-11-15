@@ -1,12 +1,13 @@
 /* Direction 2 */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
 
      /* Header */
-    --font-display: 'Pixelify Sans', sans-serif;;
-    --display-font-size: 100px;
+    --font-display: 'Press start 2p', sans-serif;
+    --display-font-size: 50px;
     /* Body */ 
     --font-main: 'Space Mono', monospace;
     --font-body: 'Roboto', sans-serif;
@@ -38,7 +39,8 @@ header {
 }
 
 h1 {
-    line-height: 80%;
+    line-height: 110%;
+    text-align: center;
     padding-top: var(--spacing);
     padding-bottom: var(--spacing);
 }
@@ -49,11 +51,20 @@ blockquote {
 }
 
 .vl {
-    border-left: 2px solid var(--background-color);
+    border-left: 2.5px solid var(--background-color);
 }
 
 p{
-    line-height: 130%;
+    line-height: 140%;
+}
+
+.top {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+footer {
+    background-color: rgb(14, 14, 203);;
+    color: white;
 }
 
 
