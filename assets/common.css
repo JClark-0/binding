@@ -5,28 +5,33 @@ html{
 	scroll-behavior: smooth;	
 }
 
-/* Main Navigation Start */
 nav {
+    /* Main Navigation Start */
     position: fixed;
     top: 0;
     height: var(--nav-height);
     line-height: var(--nav-height);
     font-family: var(--font-main);
-    background-color: var(--nav-color);
-    color: var(--nav-font-color);
+    background-color: var(--hlight-bg-color);
+    color: var(--hlight-fg-color);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    right: 0;
+    left:0;
 }
 
 /*Splitting nav to left side and right side
 .main-nav li:first-child {
     float:right;
-    margin-left: 16px;  
-}
-*/
+    margin-left: 16px;  }*/
+
 .main-nav li {
     display: inline-block;
     margin-left:16px;
 }
- /*Main Navigation End */
 
 header {
     /* Places the header under the nav */
@@ -34,7 +39,6 @@ header {
 }
 
 header, main, footer {
-    font-size: var(--font-size);
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -44,43 +48,70 @@ h1 {
     font-size: var(--display-font-size);
 }
 
-h2, h3 {
-    font-family: var(--font-main);
-    font-weight: 500;
-    padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
+article {
+    border: 2px solid rgb(23, 23, 23);
+    margin-bottom: var(--nav-height);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
     font-size: calc(var(--scale) * var(--font-size));
 } 
+
+h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+
+}
 
 p{
     font-family: var(--font-body);
     font-size: var(--font-size);
     max-width: 35rem;
-    padding-bottom: var(--spacing);
+    font-weight: 00;
+    line-height: 145%;
 }
 
 blockquote{
    font-family: var(--font-quote);
    font-size: calc(var(--scale) * var(--font-size));
    max-width: 35rem;
+   letter-spacing: .04em;
    padding-bottom: var(--spacing);
 }
 
+.button {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 200;
+    background: var(--hlight-bg-color);
+    color: var(--hlight-fg-color);
+    padding: 8px;
+    border-radius: 25px; 
+}
+
 .top {
+    position: fixed;
+    bottom: 0;
+    height: var(--nav-height);
+    line-height: var(--nav-height);
     font-family: var(--font-main);
-    position: fixed; 
-	bottom: 0;
-	right: 0;
-    padding: 4%;
-    background-color: var(--button-color);
-    color: var(--button-font-color);
+    border-radius: 8px;
+    margin: 10px;
+    right: 0;
+    left:0;
 }
 
 footer {
     font-family: var(--font-body);
     font-size: calc(var(--font-size)/1.2);
     padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
+    background-color: rgb(23, 23, 23);
+    color: white;
+    padding-bottom: calc(var(--nav-height) * 1.2);
 }
 
 
