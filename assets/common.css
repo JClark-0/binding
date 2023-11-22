@@ -53,6 +53,7 @@ h1 {
     font-weight: 800;
     padding-top: calc( 2* var(--spacing));
     padding-bottom: calc( 2*var(--spacing));
+    max-width: 35rem;
 }
 
 h2 {
@@ -73,6 +74,10 @@ p{
     max-width: 35rem;
     font-weight: 400;
     line-height: 145%;
+}
+
+ul {
+    max-width: 35rem;
 }
 
 blockquote{
