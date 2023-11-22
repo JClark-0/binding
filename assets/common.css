@@ -51,7 +51,6 @@ h1 {
     font-family: var(--font-display);
     font-size: var(--display-font-size);
     font-weight: 800;
-    line-height: 80%;
     padding-top: calc( 2* var(--spacing));
     padding-bottom: calc( 2*var(--spacing));
 }
@@ -82,6 +81,7 @@ blockquote{
    font-size: calc(var(--scale) * var(--font-size));
    max-width: 35rem;
    letter-spacing: .04em;
+   line-height:118%;
 }
 
 .button {
@@ -116,7 +116,6 @@ footer {
     background: var(--hlight-bg-color);
     color: var(--hlight-fg-color);
     padding-bottom: calc(var(--nav-height) * 1.5);
-
 }
 
 

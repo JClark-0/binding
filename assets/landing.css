@@ -37,6 +37,7 @@ header p {
 
 h1 {
     color: rgb(23, 23, 23); 
+    line-height: 80%;
 }
 
 main {
@@ -49,6 +50,8 @@ article {
     margin-bottom: var(--nav-height);
     border-radius: 8px;
     padding: 10px;
+    max-width: 35rem;
+    
 }
 
 article p {
@@ -58,4 +61,14 @@ article p {
 footer {
     background-color: rgb(23, 23, 23);
     color: white;
+}
+
+@media(min-width: 900px) { 
+
+	main {
+        display: flex;
+        gap: 16px;
+
+    }
+
 }
