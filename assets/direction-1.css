@@ -26,6 +26,9 @@ nav {
     background-color: rgba(255, 255, 255, 0.687);
     border-bottom: 2px solid black;
 }
+
+
+
 h1 {
     line-height: 80%;
     padding-top: var(--spacing);
