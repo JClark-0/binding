@@ -57,7 +57,6 @@ nav {
     margin-left:16px;
 }
 
-
 header {
     padding-top: calc(var(--nav-height) + var(--content-space));
     padding-bottom: var(--content-space);
@@ -134,7 +133,6 @@ ul {
     text-indent: -1.2em;
 }
 
-
 blockquote{
     font-family: "lores-12", sans-serif;
     font-weight: 400;
@@ -143,6 +141,7 @@ blockquote{
     max-width: 35rem;
     letter-spacing: .04em;
     line-height: 118%;
+    padding-bottom: var(--spacing);
 }
 
 
