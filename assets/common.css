@@ -7,15 +7,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
 
+:root {
+    /* Header */
+    --font-display: 'Poppins', sans-serif;
+    --display-font-size: 42px;
 
+    /* Main */ 
+    --font-body: 'Hanken Grotesk', sans-serif;
+    --font-quote: 'Hanken Grotesk', sans-serif;
+    --font-size: 16px;
+    --scale: 1.4; /* Will adjust h2, blockquote size */
+    --spacing: 16px;
+    --side-padding: 16px;
+    --content-space: 36px;
 
+    /* Navigation */
+    --nav-height: 50px; /* Will apply margin-top to headers */
+    
+    /* colors */
+    --hlight-bg-color: rgb(23, 23, 23);
+    --hlight-fg-color:white;
+}
 
 html{
 	scroll-behavior: smooth;	
 }
 
 nav {
-    /* Main Navigation Start */
+    /* Main Navigation */
     position: fixed;
     top: 0;
     height: var(--nav-height);
@@ -38,10 +57,11 @@ nav {
     margin-left:16px;
 }
 
-/*Splitting nav to left side and right side
-.main-nav li:first-child {
-    float:right;
-    margin-left: 16px;  }*/
+
+header {
+    padding-top: calc(var(--nav-height) + var(--content-space));
+    padding-bottom: var(--content-space);
+}
 
 header, footer {
     padding-left: var(--side-padding);
@@ -53,17 +73,27 @@ h1 {
     font-size: var(--display-font-size);
     font-weight: 600;
     max-width: 48rem;
+    padding-bottom: var(--content-space);
+    line-height: 90%;
+}
+
+main {
+    padding-bottom: var(--content-space);
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
 }
 
 h2 {
     font-family: var(--font-display);
     font-size: calc(var(--scale) * var(--font-size));
+    max-width: 35rem;
     font-weight: 600;
 } 
 
 h3 {
     font-family: var(--font-display);
     font-size:  var(--font-size);
+    max-width: 35rem;
     font-weight: 600;
 }
 
@@ -73,11 +103,37 @@ p{
     max-width: 35rem;
     font-weight: 400;
     line-height: 145%;
+    padding-bottom: var(--spacing);
 }
 
 ul {
     max-width: 35rem;
 }
+
+.list {
+    font-family: var(--font-body);
+	font-size: var(--font-size);
+	padding-bottom: var(--spacing);
+	margin-left: .05em;
+}
+
+.list li {
+	line-height: 120%;
+	padding-bottom: var(--spacing);
+	margin-left: 20px;
+}
+
+.list li:last-child {
+    padding-bottom: 0px;
+}
+
+.list li::before {
+    display: inline-block;
+    font-family: 'Noto Sans Symbols 2', sans-serif;
+    content:'\25AA';
+    text-indent: -1.2em;
+}
+
 
 blockquote{
     font-family: "lores-12", sans-serif;
@@ -86,7 +142,7 @@ blockquote{
     font-size: calc(var(--scale) * var(--font-size));
     max-width: 35rem;
     letter-spacing: .04em;
-    line-height:118%;
+    line-height: 118%;
 }
 
 
@@ -116,20 +172,37 @@ footer {
 @media(min-width: 425px) { 
 
     :root {
-        --side-padding: 36px;
+        --display-font-size: 48px;
+        --font-size: 18px;
+        --spacing: 18px;
+        --side-padding: 46px;
+        --content-space: 46px;
     }
 }
 
 @media(min-width: 920px) { 
   
     :root {
+        --display-font-size: 60px;
+        --font-size: 18px;
+        --spacing: 24px;
         --side-padding: 60px;
+        --content-space: 60px;
     }
 }
 
 @media(min-width: 1200px) {
 
     :root {
+        --display-font-size: 100px;
+        --font-size: 20px;
+        --spacing: 36px;
         --side-padding: 80px;
+        --content-space: 80px;
     }
 }
+
+/*Splitting nav to left side and right side
+.main-nav li:first-child {
+    float:right;
+    margin-left: 16px;  }*/

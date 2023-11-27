@@ -1,32 +1,5 @@
 /* Landing Page */
 
-:root {
-    /* Header */
-    --font-display: 'Poppins', sans-serif;
-    --display-font-size: 42px;
-
-    /* Main */ 
-    --font-body: 'Hanken Grotesk', sans-serif;
-    --font-quote: 'Hanken Grotesk', sans-serif;
-    --font-size: 16px;
-    --scale: 1.4; /* Will adjust h2, blockquote size */
-    --spacing: 16px;
-    --side-padding: 16px;
-    --content-space: 36px;
-
-    /* Navigation */
-    --nav-height: 50px; /* Will apply margin-top to headers */
-    
-    /* colors */
-    --hlight-bg-color: rgb(23, 23, 23);
-    --hlight-fg-color:white;
-}
-
-header {
-    padding-top: calc(var(--nav-height) + var(--content-space));
-    padding-bottom: var(--content-space);
-}
-
 header p {
     color:  rgb(23, 23, 23);
     max-width: 40rem;
@@ -34,14 +7,6 @@ header p {
 
 h1 {
     color: rgb(23, 23, 23); 
-    padding-bottom: var(--content-space);
-    line-height: 90%;
-}
-
-main {
-    padding-bottom: var(--content-space);
-    padding-left: var(--side-padding);
-    padding-right: var(--side-padding);
 }
 
 .cards {
@@ -111,42 +76,11 @@ main {
     transform: rotate(45deg);
 }
 
-@media(min-width: 425px) { 
-
-    :root {
-        --display-font-size: 56px;
-        --font-size: 18px;
-        --spacing: 18px;
-        --side-padding: 46px;
-        --content-space: 46px;
-    }
-
-}
 
 @media(min-width: 920px) { 
   
-    :root {
-        --display-font-size: 60px;
-        --font-size: 18px;
-        --spacing: 24px;
-        --side-padding: 60px;
-        --content-space: 60px;
-    }
-    
     .cards {
         flex-direction: row;
-    }
-
-}
-
-@media(min-width: 1200px) {
-
-    :root {
-        --display-font-size: 100px;
-        --font-size: 24px;
-        --spacing: 36px;
-        --side-padding: 80px;
-        --content-space: 80px;
     }
 
 }
