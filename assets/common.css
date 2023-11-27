@@ -58,7 +58,6 @@ nav {
 }
 
 header {
-    padding-top: calc(var(--nav-height) + var(--content-space));
     padding-bottom: var(--content-space);
 }
 
@@ -67,12 +66,47 @@ header, footer {
     padding-right: var(--side-padding);
 }
 
+.article_control {
+    font-family: var(--font-body);
+    font-size: var(--font-size);
+    font-weight: 400;
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+}
+
+.next {
+    float: right;
+}
+
+.previous::before {
+    font-family: 'Noto Sans Symbols 2', sans-serif;
+    content:'◀︎';
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.next::after {
+    font-family: 'Noto Sans Symbols 2', sans-serif;
+    content:'▶︎';
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.active_btn:hover {
+    opacity: 20%;
+    cursor: pointer; 
+}
+
+.inactive_btn {
+    visibility: hidden;
+}
+
+
 h1 {
     font-family: var(--font-display);
     font-size: var(--display-font-size);
     font-weight: 600;
     max-width: 48rem;
-    padding-bottom: var(--content-space);
     line-height: 90%;
 }
 
@@ -158,6 +192,22 @@ blockquote{
     right: 0;
     left:0;
     text-align: center;
+}
+
+.external_link {
+    text-decoration-line: underline; 
+    text-underline-offset: 6px;
+}
+
+.external_link:hover {
+    opacity: 50%;
+}
+
+.external_link[href^='https://']::after {
+    font-size: 90%;
+	font-family: 'Noto Sans Symbols 2', sans-serif;
+	content: ' 🡽'; 
+    text-decoration: none;   
 }
 
 footer {

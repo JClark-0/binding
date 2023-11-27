@@ -1,5 +1,9 @@
 /* Landing Page */
 
+header {
+    padding-top: calc(var(--nav-height) + var(--content-space));
+}
+
 header p {
     color:  rgb(23, 23, 23);
     max-width: 40rem;
@@ -7,6 +11,7 @@ header p {
 
 h1 {
     color: rgb(23, 23, 23); 
+    padding-bottom: var(--content-space);
 }
 
 .cards {
