@@ -91,10 +91,6 @@ input[type=checkbox]:checked ~ .dropdown_content  {
     opacity: 50%;
 }
 
-.dropdown:hover .dropdown_content {
-    display: block;
-}
-
 .dropdown_content a:first-child:hover {
     background: #0aa85f;
 }
@@ -276,6 +272,10 @@ footer {
         --spacing: 18px;
         --side-padding: 46px;
         --content-space: 46px;
+    }
+
+    .dropdown:hover .dropdown_content {
+        display: block;
     }
 }
 
