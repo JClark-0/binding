@@ -63,8 +63,8 @@ input[type=checkbox]:checked ~ .dropdown_content  {
 .dropdown_content a {
     display: block;
 }
-/*
-.d_button:hover {
+
+.dropdown_button:hover {
     cursor: pointer;
     opacity: 50%;
 }
@@ -72,11 +72,6 @@ input[type=checkbox]:checked ~ .dropdown_content  {
 .dropdown:hover .dropdown_content {
     display: block;
 }
-
-.dropdown:hover .d_button{
-    opacity: 50%;
-}
-*/
 
 .dropdown_content a:first-child:hover {
     background: #0aa85f;

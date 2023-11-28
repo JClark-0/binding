@@ -5,7 +5,3 @@ section {
 section p:last-child, section ul:last-child, main section:last-child  {
     padding-bottom: 0px;
 }
-
-h2 {
-    padding-bottom: var(--spacing);
-}

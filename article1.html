@@ -14,13 +14,19 @@
 
     <body>
 
-        <nav>
-            <ul class="main-nav">
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='article1.html'>A1</a></li>
-                <li><a href='article2.html'>A2</a></li>
-                <li><a href='article3.html'>A3</a></li>
-            </ul>  
+        <nav class="main_nav">
+            <a href="index.html">Home</a>
+            <div class="right_nav">
+                <div class="dropdown">
+                    <input type="checkbox" id="dropdown_check">
+                    <label class="dropdown_button" for="dropdown_check">Articles</label>
+                    <div class="dropdown_content">
+                        <a href="article1.html">Article 1</a>
+                        <a href="article2.html">Article 2</a>
+                        <a href="article3.html">Article 3</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <div id="top">
@@ -42,7 +48,6 @@
                     <p>The Role of A Great Game Designer</p>
                     <p><a class="external_link" href="https://www.gamedesignerhandbook.com/">Book Link</a></p>
                 </div>
-
             </div>
         </header>
 
