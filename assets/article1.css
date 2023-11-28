@@ -1,15 +1,22 @@
-
-
-
-section {
-    padding-bottom: var(--content-space);
-}
-section p:last-child, section ul:last-child, main section:last-child  {
-    padding-bottom: 0px;
+/*
+:root {
+    --side-padding: 10px;
 }
 
 header {
-    padding-top: calc(var(--nav-height) + 10px);
+    padding-top: calc(var(--nav-height) + 30px);
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+}
+
+.header_card {
+    background-color: #0aa85f;
+    border-radius: 0.5rem;
+    padding-left: var(--spacing);
+    padding-right: var(--spacing); 
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    width: 100%;
 }
 
 h1 {
@@ -21,29 +28,24 @@ h2 {
     padding-bottom: var(--spacing);
 }
 
+.article_info p:not(.article_info p:last-child) {
+    padding: 0px;
+}
+
 main {
     padding-bottom: var(--content-space);
     padding-left: calc( var(--spacing) + var(--side-padding));
     padding-right: calc( var(--spacing) + var(--side-padding));
 }
 
-.header_card {
-    background-color: #0aa85f;
-    border-radius: 0.5rem;
-    padding: var(--spacing);
-    width: 100%;
+section {
+    padding-bottom: var(--content-space);
+}
+section p:last-child, section ul:last-child, main section:last-child  {
+    padding-bottom: 0px;
 }
 
-/*
-.article_detail {
-	padding-top: var(--spacing);
-    padding-bottom: var(--spacing); 
-}
-*/
 
-.article_info p {
-    padding: 0px;
-}
 
 .start {
     font-family: "lores-12", sans-serif;
@@ -61,3 +63,5 @@ main {
     padding-top: var(--spacing);
     padding-bottom: var(--spacing);
 }
+
+*/

@@ -1,7 +1,1 @@
 
-section {
-    padding-bottom: var(--content-space);
-}
-section p:last-child, section ul:last-child, main section:last-child  {
-    padding-bottom: 0px;
-}
