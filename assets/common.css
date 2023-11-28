@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
 
+
 :root {
     /* Header */
     --font-display: 'Poppins', sans-serif;
@@ -33,6 +34,34 @@ html{
 	scroll-behavior: smooth;	
 }
 
+.right_nav {
+    float:right;
+    margin-right: 16px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background: grey;
+    width: 100%;
+    text-align: center;
+}
+.dropdown_content a {
+    display:block;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background: blue;
+}
+
 nav {
     /* Main Navigation */
     position: fixed;
@@ -56,6 +85,7 @@ nav {
     display: inline-block;
     margin-left:16px;
 }
+
 
 header {
     padding-bottom: var(--content-space);
