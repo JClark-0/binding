@@ -50,12 +50,25 @@ html{
     text-align: center;
     width: 200%;
     right:0;
- 
 }
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .dropdown_content  {
+    display: block;
+}
+
 .dropdown_content a {
     display:block;
 }
 
+.d_button:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+/*
 .dropdown:hover .dropdown_content {
     display: block;
 }
@@ -63,6 +76,7 @@ html{
 .dropdown:hover .d_button{
     opacity: 50%;
 }
+*/
 
 .dropdown_content a:first-child:hover {
     background: #0aa85f;
@@ -92,6 +106,7 @@ nav {
     padding-left: 10px;
     right: 0;
     left:0;
+    z-index: 20;
 }
 
 nav a:not(.dropdown a):hover {
