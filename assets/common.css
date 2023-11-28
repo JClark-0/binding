@@ -61,14 +61,14 @@ input[type=checkbox]:checked ~ .dropdown_content  {
 }
 
 .dropdown_content a {
-    display:block;
+    display: block;
 }
-
+/*
 .d_button:hover {
     cursor: pointer;
     opacity: 50%;
 }
-/*
+
 .dropdown:hover .dropdown_content {
     display: block;
 }
