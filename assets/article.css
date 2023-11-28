@@ -9,7 +9,6 @@ header {
 }
 
 .header_card {
-    background-color: white;
     border-radius: 0.5rem;
     padding-left: var(--spacing);
     padding-right: var(--spacing); 
@@ -21,7 +20,7 @@ header {
 h1 {
     line-height: 110%;
     padding-bottom: var(--spacing);
-    color:  #0aa85f;
+    color: var(--accent-color);
 }
 
 h2 {
@@ -43,4 +42,31 @@ section {
 }
 section p:last-child, section ul:last-child, main section:last-child  {
     padding-bottom: 0px;
+}
+
+.blockquote {
+    padding-top: var(--spacing);
+    padding-bottom: calc(var(--spacing) * 2);
+}
+
+blockquote {
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(var(--font-size) * var(--scale));
+    max-width: 35rem;
+    letter-spacing: .04em;
+    line-height: 118%;
+    border-left: 2px solid black;
+    padding-left: 16px;
+}
+
+.bq_info {
+    padding-top: var(--spacing);
+    padding-left: 16px;
+    opacity:50%;
+}
+
+.bq_info::before {
+    content: '- ';
 }

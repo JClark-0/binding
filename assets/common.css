@@ -26,6 +26,9 @@
     --nav-height: 50px; /* Will apply margin-top to headers */
     
     /* colors */
+    --accent-color-1: #0aa85f;
+    --accent-color-2: #DAC6FB;
+    --accent-color-3: #FF6F4F;
     --hlight-bg-color: rgb(23, 23, 23);
     --hlight-fg-color:white;
 }
@@ -45,17 +48,22 @@ nav {
     background-color: var(--hlight-bg-color);
     color: var(--hlight-fg-color);
     border-radius: 8px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    padding-left: 10px;
+    margin-top: 12px;
+    margin-left: var(--side-padding);
+    margin-right: var(--side-padding);
     right: 0;
     left:0;
-    z-index: 20;
+    z-index: 1;
+
+}
+
+.left_nav {
+    display:inline;
+    margin-left: 16px;
 }
 
 .right_nav {
+    display: inline;
     float:right;
     margin-right: 16px;
 }
@@ -68,7 +76,7 @@ nav {
 .dropdown_content {
     display: none;
     position: absolute;
-    background: rgb(23, 23, 23);
+    background: var(--hlight-bg-color);
     text-align: center;
     width: 200%;
     right:0;
@@ -92,13 +100,13 @@ input[type=checkbox]:checked ~ .dropdown_content  {
 }
 
 .dropdown_content a:first-child:hover {
-    background: #0aa85f;
+    background: var(--accent-color-1);
 }
 .dropdown_content a:nth-child(2):hover {
-    background: #DAC6FB;
+    background: var(--accent-color-2);
 }
 .dropdown_content a:nth-child(3):hover {
-    background: #FF6F4F;
+    background: var(--accent-color-3);
 }
 
 
@@ -210,33 +218,6 @@ ul {
     text-indent: -1.2em;
 }
 
-blockquote{
-    font-family: "lores-12", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: calc(var(--scale) * var(--font-size));
-    max-width: 35rem;
-    letter-spacing: .04em;
-    line-height: 118%;
-    padding-bottom: var(--spacing);
-}
-
-
-.top {
-    position: fixed;
-    bottom: 0;
-    height: var(--nav-height);
-    line-height: var(--nav-height);
-    font-family: var(--font-body);
-    background: var(--hlight-bg-color);
-    color: var(--hlight-fg-color);
-    border-radius: 8px;
-    margin: 10px;
-    right: 0;
-    left:0;
-    text-align: center;
-}
-
 .external_link {
     text-decoration-line: underline; 
     text-underline-offset: 6px;
@@ -251,6 +232,23 @@ blockquote{
 	font-family: 'Noto Sans Symbols 2', sans-serif;
 	content: ' 🡽'; 
     text-decoration: none;   
+}
+
+.top {
+    position: fixed;
+    bottom: 0;
+    height: var(--nav-height);
+    line-height: var(--nav-height);
+    font-family: var(--font-body);
+    background: var(--hlight-bg-color);
+    color: var(--hlight-fg-color);
+    border-radius: 8px;
+    margin-left: var(--side-padding);
+    margin-right: var(--side-padding);
+    margin-bottom: 12px;
+    right: 0;
+    left:0;
+    text-align: center;
 }
 
 footer {

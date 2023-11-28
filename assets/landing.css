@@ -7,7 +7,6 @@ header {
 }
 
 header p {
-    color:  rgb(23, 23, 23);
     max-width: 40rem;
 }
 
@@ -33,15 +32,15 @@ h1 {
 }
 
 .card_1 {
-    background-color: #0aa85f;
+    background-color: var(--accent-color-1);
 }
 
 .card_2 {
-    background-color: #DAC6FB;
+    background-color: var(--accent-color-2);
 }
 
 .card_3 {
-    background-color: #FF6F4F;
+    background-color: var(--accent-color-3);
 }
 
 .card_content {
@@ -53,7 +52,7 @@ h1 {
     padding-bottom:var(--spacing);
 }
 .card_detail {
-    border-top: 1.5px solid rgb(0, 0, 0);
+    border-top: 1.5px solid var(--hlight-bg-color);
 	padding-top: var(--spacing);
     padding-bottom: var(--spacing); 
 }
@@ -83,22 +82,9 @@ h1 {
     transform: rotate(45deg);
 }
 
-
 @media(min-width: 920px) { 
   
     .cards {
         flex-direction: row;
     }
-
 }
-
-
-/*
-.title {
-    font-family: "lores-12", sans-serif;
-    font-style: normal;
-    font-size:  48px;
-    line-height: 10%;
-    font-weight: 500;
-}
-*/
