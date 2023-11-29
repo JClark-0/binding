@@ -221,7 +221,7 @@ ul {
 
 .list li {
 	line-height: 120%;
-	padding-bottom: var(--spacing);
+	padding-bottom: calc(var(--spacing) /2);
 	margin-left: 20px;
 }
 
