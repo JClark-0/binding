@@ -1,5 +1,10 @@
 
 
-h1{
-    color: var(--accent-color-1);
+header{
+    background-color: var(--accent-color-1);
+    margin-bottom: var(--content-space);
+}
+
+footer{
+    background-color: var(--accent-color-1);
 }
