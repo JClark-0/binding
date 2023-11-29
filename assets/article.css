@@ -8,6 +8,7 @@ header {
 
 h1 {
     line-height: 110%;
+    padding-top: var(--spacing);
     padding-bottom: var(--spacing);
 }
 
@@ -38,7 +39,7 @@ section p:last-child, section ul:last-child, main section:last-child  {
 }
 
 blockquote {
-    font-family: "lores-12", sans-serif;
+    font-family: var(--font-accent);
     font-weight: 400;
     font-style: normal;
     font-size: calc(var(--font-size) * var(--scale));
@@ -57,30 +58,6 @@ blockquote {
 
 .bq_info::before {
     content: '- ';
-}
-
-.start {
-    font-family: "lores-12", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align:center;
-    border: solid;
-    border-radius: 0.5rem;
-    margin-top: var(--spacing);
-    margin-bottom: var(--spacing);
-    padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
-
-    width: 50%;
-    transition: all 0.1s;
-}
-
-.start:hover {
-    cursor: pointer;
-    transform-origin: center;
-    transform: scaleX(1.05);
-    border: solid white;
-    color: white;
 }
 
 
@@ -119,6 +96,13 @@ blockquote {
     main {
         margin-left: calc(var(--side-padding) - var(--spacing));
         margin-right: calc(var(--side-padding) - var(--spacing));
+    }
+
+    footer {
+        margin-left: calc(var(--side-padding) - var(--spacing));
+        margin-right: calc(var(--side-padding) - var(--spacing));
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
     }
 }
 

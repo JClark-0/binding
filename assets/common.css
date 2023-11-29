@@ -1,10 +1,8 @@
 
 /* Styles for all directions */
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 @import url("https://use.typekit.net/usc0cgq.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
 
 
@@ -15,8 +13,10 @@
 
     /* Main */ 
     --font-body: 'Hanken Grotesk', sans-serif;
-    --font-quote: 'Hanken Grotesk', sans-serif;
+    --font-accent: "lores-12", sans-serif;
+    --font-symbol: "Noto Sans Symbols 2", sans-serif;
     --font-size: 16px;
+    --btn-font-size: 14px;
     --scale: 1.4; /* Will adjust h2, blockquote size */
     --spacing: 16px;
     --side-padding: 16px;
@@ -122,7 +122,21 @@ header {
     font-family: var(--font-body);
     font-size: var(--font-size);
     font-weight: 400;
-    padding-bottom: var(--spacing);
+}
+
+.next, .previous {
+    font-family: var(--font-accent);
+    font-size: var(--btn-font-size);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align:center;
+    border: solid;
+    border-radius: 0.5rem;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 4px;
+    padding-right:4px;
+    transition: all 0.1s;
 }
 
 .next {
@@ -130,28 +144,32 @@ header {
 }
 
 .previous::before {
-    font-family: 'Noto Sans Symbols 2', sans-serif;
+    font-family: var(--font-symbol);
     content:'◀︎';
-    font-size: 12px;
+    font-size: calc(var(--btn-font-size) - 2px);
+    line-height: 0%;
     margin-right: 8px;
+
 }
 
 .next::after {
-    font-family: 'Noto Sans Symbols 2', sans-serif;
+    font-family: var(--font-symbol);
     content:'▶︎';
-    font-size: 12px;
+    font-size: calc(var(--btn-font-size) - 2px);
+    line-height: 0%;
     margin-left: 8px;
 }
 
 .active_btn:hover {
     opacity: 20%;
     cursor: pointer; 
+    transform-origin: center;
+    transform: scaleX(1.05);
 }
 
 .inactive_btn {
     visibility: hidden;
 }
-
 
 h1 {
     font-family: var(--font-display);
@@ -181,7 +199,7 @@ h3 {
     font-weight: 600;
 }
 
-p{
+p {
     font-family: var(--font-body);
     font-size: var(--font-size);
     max-width: 35rem;
@@ -213,7 +231,7 @@ ul {
 
 .list li::before {
     display: inline-block;
-    font-family: 'Noto Sans Symbols 2', sans-serif;
+    font-family: var(--font-symbol);
     content:'\25AA';
     text-indent: -1.2em;
 }
@@ -229,8 +247,8 @@ ul {
 
 .external_link[href^='https://']::after {
     font-size: 90%;
-	font-family: 'Noto Sans Symbols 2', sans-serif;
-	content: ' 🡽'; 
+	font-family: var(--font-symbol);
+	content: ' 🡭'; 
     text-decoration: none;   
 }
 
@@ -281,7 +299,7 @@ footer {
   
     :root {
         --display-font-size: 60px;
-        --font-size: 18px;
+        --font-size: 20px;
         --spacing: 24px;
         --side-padding: 60px;
         --content-space: 60px;
@@ -289,6 +307,9 @@ footer {
 
     nav {
         margin-top: 18px;
+        margin-left: calc((var(--side-padding) * 2 ) - var(--spacing));
+        margin-right: calc((var(--side-padding) * 2 ) - var(--spacing));
+
     }
 }
 
@@ -296,8 +317,8 @@ footer {
 
     :root {
         --display-font-size: 100px;
-        --font-size: 20px;
-        --spacing: 36px;
+        --font-size: 24px;
+        --spacing: 40px;
         --side-padding: 80px;
         --content-space: 80px;
     }
