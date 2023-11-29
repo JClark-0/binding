@@ -20,8 +20,8 @@ h2 {
 
 main {
     padding-bottom: var(--content-space);
-    padding-left: var(--spacing);
-    padding-right: var(--spacing);
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
 }
 
 section {
