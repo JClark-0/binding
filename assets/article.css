@@ -1,8 +1,9 @@
 
 header {
-    padding-top: calc(var(--nav-height) + 30px);
+    padding-top: calc(var(--nav-height) + 40px);
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
+
 }
 
 h1 {
@@ -106,6 +107,18 @@ blockquote {
         --spacing: 24px;
         --side-padding: 60px;
         --content-space: 60px;
+    }
+
+    header {
+        margin-left: calc(var(--side-padding) - var(--spacing));
+        margin-right: calc(var(--side-padding) - var(--spacing));
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    main {
+        margin-left: calc(var(--side-padding) - var(--spacing));
+        margin-right: calc(var(--side-padding) - var(--spacing));
     }
 }
 

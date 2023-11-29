@@ -286,6 +286,10 @@ footer {
         --side-padding: 60px;
         --content-space: 60px;
     }
+
+    nav {
+        margin-top: 18px;
+    }
 }
 
 @media(min-width: 1200px) {
