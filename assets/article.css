@@ -1,6 +1,6 @@
 
 header {
-    padding-top: calc(var(--nav-height) + 40px);
+    padding-top: calc(var(--nav-height) + var(--content-space));
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
 
@@ -8,8 +8,8 @@ header {
 
 h1 {
     line-height: 110%;
-    padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
+    padding-top: var(--content-space);
+    padding-bottom: var(--content-space);
 }
 
 h2 {
