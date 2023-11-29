@@ -255,6 +255,7 @@ ul {
 .top {
     position: fixed;
     bottom: 0;
+    right:0;
     height: var(--nav-height);
     line-height: var(--nav-height);
     font-family: var(--font-body);
@@ -263,15 +264,12 @@ ul {
     border-radius: 8px;
     margin-left: var(--side-padding);
     margin-right: var(--side-padding);
-    margin-bottom: 12px;
-    right: 0;
-    left:0;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
-.creds {
-    max-width: 60rem;
-}
 
 footer {
     font-family: var(--display-font);
@@ -279,9 +277,8 @@ footer {
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
     padding-top: var(--spacing);
-    padding-bottom: calc(var(--nav-height) + var(--spacing));
-    text-align: center;
-    align-content: center;
+    padding-bottom: var(--spacing);
+
 }
 
 @media(min-width: 425px) { 
