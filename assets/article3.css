@@ -7,3 +7,7 @@ header{
 footer{
     background-color: var(--accent-color-3);
 }
+
+.top {
+    background-color: var(--accent-color-3);
+}

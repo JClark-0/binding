@@ -8,3 +8,7 @@ header{
 footer{
     background-color: var(--accent-color-1);
 }
+
+.top {
+    background-color: var(--accent-color-1);
+}
