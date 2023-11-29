@@ -324,8 +324,3 @@ footer {
         --content-space: 80px;
     }
 }
-
-/*Splitting nav to left side and right side
-.main-nav li:first-child {
-    float:right;
-    margin-left: 16px;  }*/
