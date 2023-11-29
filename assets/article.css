@@ -86,6 +86,14 @@ blockquote {
         --content-space: 60px;
     }
 
+
+    nav {
+        margin-top: 18px;
+        margin-left: calc((var(--side-padding) * 2 ) - var(--spacing));
+        margin-right: calc((var(--side-padding) * 2 ) - var(--spacing));
+
+    }
+
     header {
         margin-left: calc(var(--side-padding) - var(--spacing));
         margin-right: calc(var(--side-padding) - var(--spacing));

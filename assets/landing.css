@@ -4,6 +4,9 @@ header {
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
 }
+.top {
+    display: none;
+}
 
 header p {
     max-width: 40rem;

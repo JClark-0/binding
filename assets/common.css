@@ -34,7 +34,7 @@
 }
 
 html{
-	scroll-behavior: smooth;	
+	scroll-behavior: smooth;
 }
 
 nav {
@@ -269,16 +269,20 @@ ul {
     text-align: center;
 }
 
+.creds {
+    max-width: 60rem;
+}
+
 footer {
     font-family: var(--display-font);
     font-size: calc(var(--font-size)/1.2);
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
-    padding-top: var(--content-space);
-    padding-bottom: calc(var(--nav-height) + var(--content-space));
+    padding-top: var(--spacing);
+    padding-bottom: calc(var(--nav-height) + var(--spacing));
     text-align: center;
+    align-content: center;
 }
-
 
 @media(min-width: 425px) { 
 
@@ -307,9 +311,6 @@ footer {
 
     nav {
         margin-top: 18px;
-        margin-left: calc((var(--side-padding) * 2 ) - var(--spacing));
-        margin-right: calc((var(--side-padding) * 2 ) - var(--spacing));
-
     }
 }
 
